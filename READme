@@ -1,0 +1,9 @@
+# El juego consiste en preguntas de diferentes categorias y diferente dificultad 
+# primero debes iniciar sesion si no tienes usuario te registras despues de esto inicias sesion.
+# vas a encontrar un dashboard donde veras las categorias de las que te salldran preguntas 
+# las preguntas no puedes seleccionar la categoria ya que las preguntas son al azar entre las categorias
+# si quieres crear una pregunta le das en configurar juego y alli entraras a una venta donde podras ingresar la pregunta categoria y nivel y la guardas
+# despues de esto debes buscar en la parte donde dice pregunta  la pregunta que creaste y asignar respuestas 
+# en el dashboard le puedes dar jugar despues iniciar si la pregunta te queda bien tendras la opcion de seguir y poder ganar mas puntos, asi con cada pregunta  hasta la ronda 5
+# tambien tienes la oportunidad de dejar el juego y quedarte con los puntos ganados
+# para ver la base de datos esta guardada en la carpeta que se llama mysql_juego
