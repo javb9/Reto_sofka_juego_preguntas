@@ -1,0 +1,32 @@
+{% extends 'plantilla.html' %}
+{% block titulo %} Registrar {% endblock %}
+{% block contenido %}
+<div class="container col-lg-2">
+    <div class="card row justify-content-center bg-light" style="margin-top: 40px; border: none;">
+        <form id="form_register" onsubmit="register_user(); return false;">
+            <div>
+                <label class="form-label">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control">
+            </div>
+            <div>
+                <label class="form-label">Usuario:</label>
+                <input type="text" name="user_registro" id="user_registro" placeholder="Usuario" class="form-control">
+            </div>
+            <div>
+                <label class="form-label">Contraseña</label>
+                <input type="password" name="password_registro" id="password_registro" placeholder="Contraseña"
+                    class="form-control">
+            </div><br>
+            <button type="submit" class="btn btn-success">Registrar</button>&nbsp;
+            <button type="button" id="back" class="btn btn-secondary">Volver</button>
+        </form>
+    </div>
+</div><br>
+<div class="row justify-content-center col-lg-12">
+    <div id="alert" class="alert alert-primary col-lg-10" style="display:none ;">
+        <center>
+            <p id="alert_text"></p>
+        </center>
+    </div>
+</div>
+{% endblock %}

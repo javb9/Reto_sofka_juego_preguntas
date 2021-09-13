@@ -1,0 +1,36 @@
+{% extends 'plantilla.html' %}
+{% block titulo %} Login {% endblock %}
+{% block contenido %}
+<div class="container">
+    <p class="fs-2">CATEGORIAS:</p>
+    <div class="row justify-content-center col-lg-12" style="margin-top: 50px;">
+        <button  class="btn btn-primary fs-4" style="width: 150px; height: 150px;">
+            Deportes
+        </button>&nbsp;
+        <button  class="btn btn-success fs-4" style="width: 150px; height: 150px;">
+            Biologia
+        </button>&nbsp;
+        <button  class="btn btn-warning fs-4" style="width: 150px; height: 150px;">
+            Geografia
+        </button>&nbsp;
+        <button  class="btn btn-danger fs-4" style="width: 150px; height: 150px;">
+            Historia
+        </button>&nbsp;
+        <button  class="btn btn-dark fs-4" style="width: 150px; height: 150px;">
+            Arte
+        </button>
+    </div><br>
+    <div class="row justify-content-center ">
+        <button class="btn btn-success col-lg-2" id='play'>
+            Jugar
+        </button>&nbsp;
+        <button class="btn btn-secondary col-lg-2" id='back'>
+            Salir
+        </button>
+    </div>
+    <div class="alert alert-primary" role="alert" id="alert" style="display: none;">
+        <p id="alert_text"></p>
+    </div>
+</div>
+
+{% endblock %}

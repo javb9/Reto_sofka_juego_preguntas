@@ -1,0 +1,80 @@
+{% extends 'plantilla.html' %}
+{% block titulo %} Registrar {% endblock %}
+{% block contenido %}
+<div class="container">
+    <!--CREAR PREGUNTAS-->
+    <form>
+        <div class="row justify-content-center col-lg-12">
+            <div class="col-lg-5">
+                <label class="form-label">Formule Pregunta:</label>
+                <input type="text" name="pregunta" id="pregunta" class="form-control" value="¿?">
+            </div>
+            <div class="col-lg-3">
+                <label class="form-label">Categoria:</label>
+                <select class="form-select" aria-label="Default select example" id="categoria">
+                    <option selected>Categoria</option>
+                    <option value="DEPORTES">DEPORTES</option>
+                    <option value="BIOLOGIA">BIOLOGIA</option>
+                    <option value="GEOGRAFIA">GEOGRAFIA</option>
+                    <option value="HISTORIA">HISTORIA</option>
+                    <option value="ARTE">ARTE</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <label class="form-label">Nivel:</label>
+                <select class="form-select" aria-label="Default select example" id="nivel">
+                    <option selected>Nivel</option>
+                    <option value="muy bajo">muy bajo</option>
+                    <option value="bajo">bajo</option>
+                    <option value="intermedio">intermedio</option>
+                    <option value="alto">alto</option>
+                    <option value="muy alto">muy alto</option>
+                </select><br>
+                <input disabled type="text" id="premio" class="form-control col-lg-2" value="Premio"><br>
+            </div>
+            <div class="col-lg-2">
+                <br>
+                <button class="btn btn-success" id="btn_save_question" type="button">Guardar</button>
+            </div>
+
+            <!--CREAR RESPUESTAS-->
+
+            <div class="col-lg-4">
+                <label class="form-label">Pregunta:</label>
+                <select class="form-select mb-1" aria-label="Default select example" id="preguntas_creadas">
+                    <option selected>Pregunta</option>
+                    
+                </select>
+            </div>
+            <div class="col-lg-4">
+                <label class="form-label">Respuesta correcta:</label>
+                <input type="text" name="true" id="true" class="form-control">
+            </div>
+            <div class="col-lg-4">
+                <label class="form-label">Respuestas incorrectas:</label>
+                <input type="text" name="false_1" id="false_1" class="form-control"><br>
+                <input type="text" name="false_2" id="false_2" class="form-control"><br>
+                <input type="text" name="false_3" id="false_3" class="form-control"><br>
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-success col-lg-2" id="btn_save_answer" type="button">Guardar</button>&nbsp;
+                <button class="btn btn-secondary col-lg-2" id="back" type="button">Volver</button>&nbsp;
+                <button class="btn btn-secondary col-lg-2" type="reset">Restaurar</button>&nbsp;
+                <button class="btn btn-primary col-lg-2" type="button" id="resfrescar">Refrescar</button>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div class="row justify-content-center col-lg-12">
+                <div id="alert" class="alert alert-primary col-lg-12" style="display: none; height: 50px;">
+                    <center>
+                        <p id="alert_text"></p>
+                    </center>
+                </div>
+            </div>
+    </form>
+</div>
+
+
+
+{% endblock %}
